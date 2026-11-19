@@ -1,0 +1,29 @@
+# SECRETS — never commit any of these
+.makefun/
+credentials
+credentials.json
+*.keypair.json
+sans-keypair.json
+*.pem
+.env
+.env.local
+
+# makefun internals (contain wallet + anchor signature)
+.makefun/freshness.json
+freshness.json
+
+# transcript / session databases (may contain the coding session)
+*.db
+*.sqlite
+*.sqlite3
+
+# bundles + build output
+*.tar.gz
+out/
+output/
+/tmp/
+
+# python / node
+__pycache__/
+*.pyc
+node_modules/
