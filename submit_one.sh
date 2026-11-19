@@ -7,7 +7,7 @@
 #
 # Prerequisites (all OUTSIDE this repo — never commit them):
 #   - makefun CLI (makefun.mjs) from a bounty kit, on your PATH
-#   - keypair at ~/.makefun/sans-keypair.json
+#   - keypair at ~/.makefun/keypair.json
 #   - credentials at ~/.makefun/credentials (created by `makefun connect`)
 #
 # Usage:
@@ -18,7 +18,7 @@ SLUG="${1:?competition slug required}"
 SOURCE="${2:?source dir required}"
 TITLE="${3:?title required}"
 
-KEYPAIR="$HOME/.makefun/sans-keypair.json"
+KEYPAIR="$HOME/.makefun/keypair.json"
 DRAND="https://api.drand.sh"
 
 echo "▶ init $SLUG in $SOURCE"

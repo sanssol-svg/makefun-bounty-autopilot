@@ -43,7 +43,7 @@ Download a bounty kit from make.fun — it ships `cli/makefun.mjs` plus a
 
 ```bash
 makefun connect          # links your make.fun account
-# creates ~/.makefun/credentials  and  ~/.makefun/sans-keypair.json
+# creates ~/.makefun/credentials  and  ~/.makefun/keypair.json
 ```
 
 ### 3. Seed the state files
@@ -89,7 +89,7 @@ make.fun's `makefun init` writes **two** things that MUST NOT leave your
 machine:
 
 1. `~/.makefun/credentials` — your account bearer token
-2. `~/.makefun/sans-keypair.json` — your payout wallet private key
+2. `~/.makefun/keypair.json` — your payout wallet private key
 3. `.makefun/freshness.json` — contains your payout **wallet address** +
    a drand anchor signature
 4. `LICENSE` — `makefun init` writes your wallet address into the

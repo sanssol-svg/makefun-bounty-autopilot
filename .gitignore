@@ -3,7 +3,6 @@
 credentials
 credentials.json
 *.keypair.json
-sans-keypair.json
 *.pem
 .env
 .env.local
